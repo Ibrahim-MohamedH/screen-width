@@ -17,7 +17,7 @@
     <script>
       let btn = document.querySelector("p");
       function printWidht() {
-        btn.innerText = window.innerWidth;
+        btn.innerText = `Width: ${window.innerWidth}px, Height: ${window.innerHeight}px`;
       }
       window.addEventListener("load", printWidht);
       window.addEventListener("resize", printWidht);
