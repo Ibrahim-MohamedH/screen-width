@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p
+      style="
+        text-align: center;
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 24px;
+      "
+    ></p>
+    <script>
+      let btn = document.querySelector("p");
+      function printWidht() {
+        btn.innerText = window.innerWidth;
+      }
+      window.addEventListener("load", printWidht);
+      window.addEventListener("resize", printWidht);
+    </script>
+  </body>
+</html>
